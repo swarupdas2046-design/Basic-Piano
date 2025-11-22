@@ -1,0 +1,104 @@
+@font-face {
+  font-family: das;
+  src: url(./Storm\ Gust.otf);
+}
+@font-face {
+  font-family: heading;
+  src: url(./CrimsonFlare-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.912);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  height: 600px;
+  width: 800px;
+  background-image: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  color: white;
+}
+.main .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+}
+.main .top h3 {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: das;
+}
+.main .mid {
+  height: 100px;
+  width: 500px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .mid h2 {
+  font-size: 50px;
+  color: rgba(240, 248, 255, 0.489);
+}
+.main .down {
+  height: 300px;
+  width: 100%;
+  background: linear-gradient(to left, rgb(116, 8, 8), rgb(7, 7, 159));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .down .element {
+  height: 250px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 5px;
+}
+.main .down button {
+  padding: 100px 20px;
+  border: none;
+  font-size: 26px;
+  border-radius: 10px;
+  background-color: rgb(11, 11, 11);
+  color: rgb(249, 247, 247);
+}
+.main .down button:Active {
+  background-color: rgba(15, 13, 13, 0.803);
+  scale: 0.95;
+  box-shadow: 5px 5px 30px rgb(123, 165, 5);
+}
+
+h1 {
+  -webkit-background-clip: text;
+          background-clip: text;
+  white-space: nowrap;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=style.css.map */
