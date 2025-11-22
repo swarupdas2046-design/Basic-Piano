@@ -27,10 +27,10 @@ let arr = [
     {
         "h": new Audio("./40.mp3")
     },
-     {
+    {
         "j": new Audio("./37.mp3")
     },
-     {
+    {
         "k": new Audio("./36.mp3")
     },
 ]
@@ -55,6 +55,7 @@ document.body.addEventListener("keydown", function (dtls) {
 
 
     if (num === 0) {
+        arr[0].a.currentTime = 0;
         arr[0].a.play()
         p[0].style.backgroundColor = `rgba(15, 13, 13, 0.803)`;
         setTimeout(() => {
@@ -62,8 +63,10 @@ document.body.addEventListener("keydown", function (dtls) {
         }, 500);
     }
     else if (num === 1) {
-        arr[1].b.play()
+        arr[1].b.currentTime = 0;
 
+
+        arr[1].b.play()
         p[1].style.backgroundColor = `rgba(15, 13, 13, 0.803)`
         setTimeout(() => {
             p[1].style.backgroundColor = "black"
@@ -71,6 +74,8 @@ document.body.addEventListener("keydown", function (dtls) {
     }
 
     else if (num === 2) {
+        arr[2].c.currentTime = 0;
+
         arr[2].c.play()
         p[2].style.backgroundColor = `rgba(15, 13, 13, 0.803)`
         setTimeout(() => {
@@ -79,6 +84,8 @@ document.body.addEventListener("keydown", function (dtls) {
     }
 
     else if (num === 3) {
+        arr[3].d.currentTime = 0;
+
         arr[3].d.play()
         p[3].style.backgroundColor = `rgba(15, 13, 13, 0.803)`
         setTimeout(() => {
@@ -86,6 +93,8 @@ document.body.addEventListener("keydown", function (dtls) {
         }, 500);
     }
     else if (num === 4) {
+        arr[4].e.currentTime = 0;
+
         arr[4].e.play()
         p[4].style.backgroundColor = `rgba(15, 13, 13, 0.803)`
         setTimeout(() => {
@@ -93,6 +102,8 @@ document.body.addEventListener("keydown", function (dtls) {
         }, 500);
     }
     else if (num === 5) {
+        arr[5].f.currentTime = 0;
+
         arr[5].f.play()
         p[5].style.backgroundColor = `rgba(15, 13, 13, 0.803)`
         setTimeout(() => {
@@ -100,6 +111,8 @@ document.body.addEventListener("keydown", function (dtls) {
         }, 500);
     }
     else if (num === 6) {
+        arr[6].g.currentTime = 0;
+
         arr[6].g.play()
         p[6].style.backgroundColor = `rgba(15, 13, 13, 0.803)`
         setTimeout(() => {
@@ -107,26 +120,32 @@ document.body.addEventListener("keydown", function (dtls) {
         }, 500);
     }
     else if (num === 7) {
+        arr[7].h.currentTime = 0;
+
         arr[7].h.play()
         p[7].style.backgroundColor = `rgba(15, 13, 13, 0.803)`
         setTimeout(() => {
             p[7].style.backgroundColor = "black"
         }, 500);
     }
-       else if (num === 8) {
+    else if (num === 8) {
+        arr[8].j.currentTime = 0;
+
         arr[8].j.play()
-         p[8].style.backgroundColor = `rgba(15, 13, 13, 0.803)`
+        p[8].style.backgroundColor = `rgba(15, 13, 13, 0.803)`
         setTimeout(() => {
             p[8].style.backgroundColor = "black"
         }, 500);
     }
-       else if (num === 9) {
+    else if (num === 9) {
+        arr[9].k.currentTime = 0;
+
         arr[9].k.play()
-         p[9].style.backgroundColor = `rgba(15, 13, 13, 0.803)`
+        p[9].style.backgroundColor = `rgba(15, 13, 13, 0.803)`
         setTimeout(() => {
             p[9].style.backgroundColor = "black"
         }, 500);
-       
+
     }
 
 
@@ -169,15 +188,15 @@ p.forEach(function (val, index) {
 
         else if (index === 7) {
             arr[7].h.play()
-        
+
         }
         else if (index === 8) {
             arr[8].j.play()
-        
+
         }
         else if (index === 9) {
             arr[9].k.play()
-        
+
         }
 
 
