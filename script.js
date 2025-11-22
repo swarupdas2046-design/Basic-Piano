@@ -161,40 +161,50 @@ p.forEach(function (val, index) {
     val.addEventListener("click", function () {
 
         if (index === 0) {
+            arr[0].a.currentTime = 0;
             arr[0].a.play()
         }
 
         else if (index == 1) {
+            arr[1].b.currentTime = 0;
             arr[1].b.play()
         }
 
         else if (index === 2) {
+            arr[2].c.currentTime = 0;
             arr[2].c.play()
         }
         else if (index === 3) {
+            arr[3].d.currentTime = 0;
             arr[3].d.play()
         }
         else if (index === 4) {
+            arr[4].e.currentTime = 0;
             arr[4].e.play()
         }
 
         else if (index === 5) {
+            arr[5].f.currentTime = 0;
             arr[5].f.play()
         }
 
         else if (index === 6) {
+            arr[6].g.currentTime = 0;
             arr[6].g.play()
         }
 
         else if (index === 7) {
+            arr[7].h.currentTime = 0;
             arr[7].h.play()
 
         }
         else if (index === 8) {
+            arr[8].j.currentTime = 0;
             arr[8].j.play()
 
         }
         else if (index === 9) {
+            arr[9].k.currentTime = 0;
             arr[9].k.play()
 
         }
