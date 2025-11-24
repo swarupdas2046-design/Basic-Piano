@@ -33,7 +33,19 @@ let arr = [
     {
         "k": new Audio("./36.mp3")
     },
+    {
+        "v": new Audio("./38.mp3")
+    },
+    {
+        "m": new Audio("./39.mp3")
+    },
+    {
+        "n": new Audio("./35.mp3")
+    },
+
 ]
+
+
 
 let map = {
     "a": 0,
@@ -45,7 +57,10 @@ let map = {
     "g": 6,
     "h": 7,
     "j": 8,
-    "k": 9
+    "k": 9,
+    "v": 10,
+    "m": 11,
+    "n": 12
 };
 document.body.addEventListener("keydown", function (dtls) {
 
@@ -54,10 +69,13 @@ document.body.addEventListener("keydown", function (dtls) {
     let num = map[dtls.key]
 
 
+
+
     if (num === 0) {
         arr[0].a.currentTime = 0;
         arr[0].a.play()
         p[0].style.backgroundColor = `rgba(15, 13, 13, 0.803)`;
+
         setTimeout(() => {
             p[0].style.backgroundColor = "black"
         }, 500);
@@ -145,9 +163,37 @@ document.body.addEventListener("keydown", function (dtls) {
         setTimeout(() => {
             p[9].style.backgroundColor = "black"
         }, 500);
-
     }
 
+    else if (num === 10) {
+        arr[10].v.currentTime = 0;
+
+        arr[10].v.play()
+        p[10].style.backgroundColor = `rgba(15, 13, 13, 0.803)`
+        setTimeout(() => {
+            p[10].style.backgroundColor = "black"
+        }, 500);
+    }
+
+    else if (num === 11) {
+        arr[11].m.currentTime = 0;
+
+        arr[11].m.play()
+        p[11].style.backgroundColor = `rgba(15, 13, 13, 0.803)`
+        setTimeout(() => {
+            p[11].style.backgroundColor = "black"
+        }, 500);
+    }
+
+    else if (num === 12) {
+        arr[12].n.currentTime = 0;
+
+        arr[12].n.play()
+        p[12].style.backgroundColor = `rgba(15, 13, 13, 0.803)`
+        setTimeout(() => {
+            p[12].style.backgroundColor = "black"
+        }, 500);
+    }
 
 
 })
@@ -208,6 +254,21 @@ p.forEach(function (val, index) {
             arr[9].k.play()
 
         }
+        else if (index === 10) {
+            arr[10].v.currentTime = 0;
+            arr[10].v.play()
+
+        }
+        else if (index === 11) {
+            arr[11].m.currentTime = 0;
+            arr[11].m.play()
+
+        }
+        else if (index === 12) {
+            arr[12].n.currentTime = 0;
+            arr[12].n.play()
+
+        }
 
 
     })
@@ -215,49 +276,3 @@ p.forEach(function (val, index) {
 })
 
 
-
-
-
-// let arr = [
-//     { a: new Audio("./28.mp3") },
-//     { b: new Audio("./29.mp3") },
-//     { c: new Audio("./30.mp3") },
-//     { d: new Audio("./31.mp3") },
-//     { e: new Audio("./32.mp3") },
-//     { f: new Audio("./33.mp3") },
-//     { g: new Audio("./34.mp3") },
-//     { h: new Audio("./35.mp3") }
-// ];
-
-// let p = document.querySelectorAll("p");
-
-// p.forEach(function (val, index) {
-//     val.addEventListener("click", function () {
-
-//         if (index === 0) {
-//             arr[0].a.play();
-//         }
-//         else if (index === 1) {
-//             arr[1].b.play();
-//         }
-//         else if (index === 2) {
-//             arr[2].c.play();
-//         }
-//         else if (index === 3) {
-//             arr[3].d.play();
-//         }
-//         else if (index === 4) {
-//             arr[4].e.play();
-//         }
-//         else if (index === 5) {
-//             arr[5].f.play();
-//         }
-//         else if (index === 6) {
-//             arr[6].g.play();
-//         }
-//         else if (index === 7) {
-//             arr[7].h.play();
-//         }
-
-//     });
-// });
